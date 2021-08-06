@@ -1,0 +1,356 @@
+<html>
+  <head>
+    <title>La tunisie toute l'année</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #bloc_page {
+        width: 1350px;
+        margin: auto;
+      }
+
+      header {
+        height: 150px;
+      }
+
+      /* ********* les réseau sociaux *********** */
+
+.conteneur{
+display: flex;
+justify-content:center;
+align-items:center;
+margin-bottom: 1px;
+
+}
+.social{
+position: relative;
+background-color: rgba(0, 0,0, 0.2);
+width: 40px;
+height: 40px;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 10px;
+}
+.social img{
+z-index: 2;
+width: 30px;
+height: 30px;
+}
+.font-face,.font-wi ,.font-insta,.font-you{
+top: -40px;
+z-index: 1;
+display: block;
+height: 40px;
+width: 40px;
+position: absolute;
+transition: 0.5s;
+}
+.font-face{
+background-color: #3c6dc7;
+}
+.font-wi{
+background-color:#3498DB ;
+}
+.font-insta{
+background-color:rgb(219, 52, 52);
+}
+.font-you{
+background-color:rgb(245, 5, 5);
+}
+.social:hover .font-face{
+top: 0;
+}
+.social:hover .font-wi{
+top: 0;
+}
+.social:hover .font-insta{
+top: 0;
+}
+.social:hover .font-you{
+top: 0;
+}
+
+/* ******** logo ****** */
+
+
+      #logo {
+        width: 200px;
+        margin-top: 0.9px;
+        display: inline-block;
+        margin-left: 80px;
+      }
+
+      h3 {
+        display: inline-block;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 24px;
+        color: rgb(0, 162, 255);
+        font-style: italic;
+      }
+
+/* Navigation */
+      nav {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        display: inline-block;
+        text-align: right;
+        width: 1300px;
+      }
+
+      nav ul {
+        list-style-type: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+
+      nav a {
+        font-size: 1.1em;
+        color: rgb(78, 77, 77);
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: #760001;
+        border-bottom: 1px solid #760001;
+      }
+      /* description de section */
+ #Hiver{
+height: 600px;
+background: url('image/tunisieT/hiver.jpg') no-repeat center fixed ; 
+margin-top: 55px;
+margin-bottom: 25px;
+background-size: cover;
+}
+.text{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: justify;
+size: 16px;
+color: white;
+background-color: black;
+opacity: 0.5;
+height: 300px;
+width: 500px;
+margin: 0 auto;
+padding: 1% 2% 2% 2% ;
+}
+p{
+font-size: 14px;
+font-weight: normal;
+line-height: 1.5;
+
+}
+#Printemps{
+height: 600px;
+background: url('image/tunisieT/printemps.jpg') no-repeat center fixed ; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+
+}
+div h2{
+text-decoration: underline;
+padding-bottom: 20px;
+font-size: 30px;
+}
+#Eté{
+height: 600px;
+background: url('image/tunisieT/Eté3.jpg') no-repeat center fixed ; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+#Automne{
+height: 600px;
+background: url('image/tunisieT/Automne4.jpg') no-repeat center fixed ; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+.boutton_plus{
+color: white;
+font-size: 1.2em;
+font-weight: bold;
+position: absolute;
+border: 3px solid orangered;
+padding: 4px 4px;
+background-color: orangered;
+text-decoration: none;
+right: 400px;
+border-radius: 10px;
+text-align: center;
+}
+.footer2{
+display: inline-block;
+text-decoration: none;
+color: rgb(128, 113, 113);
+padding: 2px 100px 2px 100px;
+}
+#button{
+border: 1px solid gray;
+color: black;
+border-radius: 5px;
+text-align: center;
+font-size: 14px;
+height: 35px;
+width: 100px;
+}
+#button :active{
+color: gray
+}
+#email{
+border-radius: 5px;
+height: 35px;
+width: 300px;
+}
+.copyright{
+text-align: center;
+color: gray;
+font-size: 14px;
+}
+  
+    </style>
+  </head>
+
+  <body>
+    <div id="bloc_page">
+      <header>
+      <div class="conteneur">
+        <a href="https://www.facebook.com/soufi.safa.3/" class="social"><img src="image/face.png" alt="facebook">
+          <div class="font-face"></div>
+        </a>
+        <a href="https://twitter.com/ChroudiSafa" class="social"><img src="image/twi.png" alt="twitter">
+          <div class="font-wi"></div>
+        </a>
+        <a href="https://www.instagram.com/safachroudi/?hl=fr" class="social"><img src="image/instaGris.png" alt="instagram">
+          <div class="font-insta"></div>
+        </a>
+        <a href="https://www.youtube.com/" class="social"><img src="image/icons8-de-youtube.png" alt="google plus">
+          <div class="font-you"></div>
+        </a>
+      
+      </div>
+        <nav>
+          <ul>
+            <li><a href="Decouvrire.html">Accueil</a></li>
+            <li><a href="#">à propos</a></li>
+            <li><a href="contacterNous.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div id="titre_principalle">
+            <img src="image\tunisia.png" alt="logo de tunisie" id="logo" />
+            <h3>la meuilleur destination !</h3>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="Decouvrire.html">Découvrir</a></li>
+              <li>
+                <a href="tunisieTouteL'année.html">La tunisie toute l'année</a>
+              </li>
+              <li><a href="MediaCenter.html">Media Center</a></li>
+              <li><a href="Evennement.html">Evénnement </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+</br></br></br>
+<section>
+  <article>
+    <div id="Hiver">
+      <div class="text">
+        <h2>HIVER</h2>
+        <p>
+          Doux et ensoleillé, l’hiver se prête aux longues randonnées à pied, à cheval, en auto ou moto. C’est la saison idéale
+          pour explorer le Sahara ou pour visiter les médinas, musées et sites archéologiques. Autres options : une cure de
+          thalasso et de remise en forme, ou un circuit golfique à travers les greens de Tunisie.
+        </p></br>
+        <a href="#" class="boutton_plus">En savoir plus</a>
+      </div>
+      </div>
+      <div id="Printemps">
+        <div class="text">
+          <h2>PRINTEMPS</h2>
+          <p>
+            Saison de lumière et de verdure, c’est le printemps tunisien qui a inspiréle peintre Paul Klee lors de son célèbre
+            voyage en Tunisie. Profitez de cette belle saison pour un séjour au bord de l’eau, pour pratiquer votre sport nautique
+            favori, ou pour découvrir des sites et des lieux chargés d’histoire.
+          </p>
+          <a href="#" class="boutton_plus">En savoir plus</a>
+        </div>
+      </div>
+      <div id="Eté">
+        <div class="text">
+          <h2>ETÉ</h2>
+          <p>
+            En été, la Tunisie est la destination reine des vacances balnéaires : plages interminables, hôtels et clubs pour tous
+            les goûts, stations touristiques animées. En été, le pays vit aussi et surtout la nuit : les occasions de faire la fête
+            ne manquent pas.
+          </p>
+          <a href="#" class="boutton_plus">En savoir plus</a>
+        </div>
+      </div>
+      <div id="Automne">
+        <div class="text">
+          <h2>AUTOMNE</h2>
+          <p>
+            Profitez des températures encore clémentes de l’automne pour des baignades à la plage, des balades en mer ou une
+            escapade au Sahara. Et pour les plus sportifs : golf, sports nautiques ou kite surf. Quelque soit votre choix, vous vous
+            laisserez aussi tenter par des soins dans l’un des nombreux centres de thalasso & Spa.
+          </p>
+          <a href="#" class="boutton_plus">En savoir plus</a>
+        </div>
+      </div>
+      </article>
+      </section>
+      <hr />
+      <footer>
+        <div class="footer2">
+          <h3>Newsletter</h3>
+          <h5>Inscriver-vous à notre newsletter</h5>
+          <form>
+            <tr>
+              <td>
+                <input type="email" placeholder="Votre Email ici" id="email" />
+              </td>
+            </tr>
+            </br>
+            <hr style="width: 300px; position: absolute;" /></br>
+            <tr>
+              <input type="submit" value="S'inscrire" name="inscrivez vous" id="button" />
+            </tr>
+            </form>
+            </div>
+            <div class="footer2">
+              <h3>La tunisie toute l'année</h3>
+              <h5>Automne</h5>
+              <h5>Eté</h5>
+              <h5>Hiver</h5>
+              <h5>Printemps</h5>
+            </div>
+            <div class="footer2">
+              <h3>Info Pratique</h3>
+              <h5>Information générales</h5>
+              <h5>Hébergement</h5>
+              <h5>Météo</h5>
+              <h5>Transport</h5>
+            </div>
+            </br>
+            </br>
+            <p class="copyright">Copyright 2016 Office National du Tourisme Tunisien Communiqués</p>
+        </footer>
+
+    </div>
+  </body>
+</html>

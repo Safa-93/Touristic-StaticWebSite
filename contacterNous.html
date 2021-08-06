@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mon premier site web</title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #bloc_page {
+      width: 1350px;
+      margin: auto;
+    }
+    header {
+    height: 180px;
+    }
+/* ********* les réseau sociaux *********** */
+
+.conteneur {
+display: flex;
+justify-content:center;
+align-items:center;
+margin-bottom: 1px;
+}
+.social {
+position: relative;
+background-color: rgba(0, 0,0, 0.2);
+width: 40px;
+height: 40px;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 10px;
+}
+
+.social img {
+z-index: 2;
+width: 30px;
+height: 30px;
+}
+.font-face,.font-wi ,.font-insta,.font-you {
+top: -40px;
+z-index: 1;
+display: block;
+height: 40px;
+width: 40px;
+position: absolute;
+transition: 0.5s;
+}
+.font-face {
+background-color: #3c6dc7;
+}
+.font-wi {
+background-color:#3498DB ;
+}
+.font-insta {
+background-color:rgb(219, 52, 52);
+}
+.font-you {
+background-color:rgb(245, 5, 5);
+}
+.social:hover .font-face {
+top: 0;
+}
+.social:hover .font-wi {
+top: 0;
+}
+.social:hover .font-insta {
+top: 0;
+}
+.social:hover .font-you {
+top: 0;
+}
+
+/* ******** logo ****** */
+    #logo {
+    width: 200px;
+    margin-top: 0.8px;
+    display: inline-block;
+    margin-left: 80px;
+    }
+   
+ h3 {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(0, 162, 255);
+    font-style: italic;
+   
+    }
+    /* ********* Navigation ********** */
+    nav {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    text-align: right;
+    width: 1300px;
+    }
+    nav ul {
+    list-style-type: none;
+  
+    }
+    nav li {
+    display: inline-block;
+    margin-right: 15px;
+    
+    
+    }
+    nav a {
+    font-size: 1.1em;
+    color: rgb(78, 77, 77); 
+    text-decoration: none; 
+    }
+    nav a:hover {
+    color: #760001;
+    border-bottom: 1px solid  #760001;
+    }
+
+    #entete{
+    background: url("image/ksarJam.jpg") no-repeat center;
+    height: 100px;
+    background-size: 1200px;
+    font-size: 35px; font-weight: bold; color: white; font-family: 'Times New Roman', Times, serif;
+    padding-top: 290px;
+    padding-left: 150px;
+    
+
+    
+
+
+    }
+fieldset{
+width: 1270px;
+}
+legend{
+font-family: sans-serif;
+color: blue;
+font-size: 16px;
+font-weight: bold;
+}
+ 
+.inline , #sujet , textarea {
+padding: 10px;
+border: 1px solid transparent ;
+border-bottom-color: #cccccc;
+box-shadow: none;
+height: 40px;
+font-size: 14px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+line-height: 2;
+margin-right: 20px;
+
+}
+.inline{
+width: 380px;
+}
+#sujet , textarea{
+width: 290%;
+}
+textarea{
+ height: 200px;
+ opacity: 1;
+}
+.bouton2{
+border: 1px solid;
+color: rgba(0, 0, 0);
+font-weight: bold;
+text-align: center;
+font-size: 14px;
+height: 35px;
+width: 100px;
+margin-top: 30px;
+border-radius: 10px;
+box-shadow: 10px 5px 5px gray;
+
+}
+.bouton2:hover{
+background-color: black;
+color: white;
+}
+
+.lien-commissariat{
+display: inline-block;
+margin-left: 100px;
+
+}
+
+    /* ******** Footer ******** */
+.footer2{
+display: inline-block;
+text-decoration: none;
+color: rgb(128, 113, 113);
+padding: 2px 100px 2px 100px;
+}
+
+#email{
+border-radius: 5px;
+height: 35px;
+width: 300px;
+}
+
+.copyright{
+text-align: center;
+color: gray;
+font-size: 14px;
+}
+    </style>
+    </head>
+    
+    <body>
+      <div id="bloc_page">
+        <header>
+          <div class="conteneur">
+            <a href="https://www.facebook.com/soufi.safa.3/" class="social"><img src="image/face.png" alt="facebook">
+              <div class="font-face"></div>
+            </a>
+            <a href="https://twitter.com/ChroudiSafa" class="social"><img src="image/twi.png" alt="twitter">
+              <div class="font-wi"></div>
+            </a>
+            <a href="https://www.instagram.com/safachroudi/?hl=fr" class="social"><img src="image/instaGris.png"
+                alt="instagram">
+              <div class="font-insta"></div>
+            </a>
+            <a href="https://www.youtube.com/" class="social"><img src="image/icons8-de-youtube.png" alt="google plus">
+              <div class="font-you"></div>
+            </a>
+    
+          </div>
+          <nav id="contact">
+            <ul>
+              <li><a href="Decouvrire.html">Accueil</a></li>
+              <li><a href="#">à propos</a></li>
+              <li><a href="contacterNous.html">Contact</a></li>
+            </ul>
+          </nav>
+    
+          <div>
+            <img src="image\tunisia.png" alt="logo de tunisie" id="logo" />
+            <h3>la meuilleur destination !</h3>
+    
+            <nav>
+              <ul>
+                <li><a href="Decouvrire.html">Découvrir</a></li>
+                <li><a href="tunisieTouteL'année.html">La tunisie toute l'année</a></li>
+                <li><a href="MediaCenter.html">Media Center</a></li>
+                <li><a href="Evennement.html">Evénnement </a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        </br></br></br>
+        <p id="entete">Contact</p>
+        </br></br></br>
+<section>
+  <article>
+<div>
+ 
+
+
+</div>
+
+  
+  <div id="map">
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+          <script>(function () {
+              var setting = { "height": 531, "width": 792, "zoom": 14, "queryString": "Mahdia, Tunisie", "place_id": "ChIJ-WxsGPUjAhMRu6X_TXN7X2c", "satellite": false, "centerCoord": [35.50473323679972, 11.052056999999982], "cid": "0x675f7b734dffa5bb", "lang": "fr", "cityUrl": "/tunisia/mahdia-14655", "cityAnchorText": "Carte de Mahdia, Tunisia 2, Tunisie", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "218887" };
+              var d = document;
+              var s = d.createElement('script');
+              s.src = 'https://1map.com/js/script-for-user.js?embed_id=218887';
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting)
+              };
+              var to = d.getElementsByTagName('script')[0];
+              to.parentNode.insertBefore(s, to);
+            })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+
+        </div>
+
+</div>
+        <div>
+        <p class="lien-commissariat"><a href="#">Commissariat régionaux au tourisme </a></p> 
+        <p class="lien-commissariat"><a href="#">Liste des bureaux de représentation de l'ONTT à l'étranger</a> </p>
+        </div>
+
+        </br></br>
+      
+      <form id="form1">
+      <fieldset>
+      <legend>Vos Cordonnées</legend>
+      <table>
+      <tr>
+      <td> <input type="text" placeholder="Nom:" class="inline" required></td>
+      <td> <input type="text" placeholder="Prenom:"class="inline" required></td>
+      <td> <input type="email" placeholder="Email:"class="inline" required></td>
+      </tr>
+      <tr>
+        <td> <input type="text" placeholder="Adresse:"class="inline"></td>
+        <td> <input type="tel" placeholder="Téléphone:"class="inline"required></td>
+        <td> <input type="text" placeholder="Organisation:"class="inline"></td>
+      </tr>
+      <tr>
+        <td> <input type="text" placeholder="Sujet:" id="sujet"></td>
+      </tr>
+      <tr>
+       <td><textarea type="text" placeholder="Message :" id="message"></textarea></td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Envoyer" class="bouton2"/>
+        </td>
+      </tr>
+      </table>
+      </fieldset>
+      </form>
+      
+      
+      </article>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</br></br></br></br></br></br>
+
+      <footer>
+        <div class="footer2">
+          <h3>Newsletter</h3>
+          <h5>Inscriver-vous à notre newsletter</h5>
+          <form>
+            <tr>
+              <td>
+                <input type="email" placeholder="Votre Email ici" id="email" />
+              </td>
+            </tr>
+            </br>
+            <hr style="width: 300px; position: absolute;" /></br>
+            <tr>
+              <input type="submit" value="S'inscrire" name="inscrivez vous" class="bouton2" />
+            </tr>
+          </form>
+        </div>
+        <div class="footer2">
+          <h3>La tunisie toute l'année</h3></br>
+          <h5>Automne</h5>
+          <h5>Eté</h5>
+          <h5>Hiver</h5>
+          <h5>Printemps</h5>
+        </div>
+        <div class="footer2">
+          <h3>Info Pratique</h3>
+          <h5>Information générales</h5>
+          <h5>Hébergement</h5>
+          <h5>Météo</h5>
+          <h5>Transport</h5>
+        </div>
+        </br>
+        </br>
+        <p class="copyright">Copyright 2016 Office National du Tourisme Tunisien Communiqués</p>
+      </footer>
+      </div>
+      </body>
+      
+      </html>

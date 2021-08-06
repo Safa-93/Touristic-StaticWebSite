@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon premier site web</title>
+    <meta charset="utf-8" />
+    <style>
+
+    body{
+    background-color: white;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    #bloc_page{
+    width: 1350px;
+    margin: auto;
+    }
+
+
+    header{
+    height: 180px;
+    }
+/* ********* les réseau sociaux *********** */
+
+.conteneur{
+display: flex;
+justify-content:center;
+align-items:center;
+margin-bottom: 1px;
+
+}
+.social{
+position: relative;
+background-color: rgba(0, 0,0, 0.2);
+width: 40px;
+height: 40px;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 10px;
+}
+.social img{
+z-index: 2;
+width: 30px;
+height: 30px;
+}
+.font-face,.font-wi ,.font-insta,.font-you{
+top: -40px;
+z-index: 1;
+display: block;
+height: 40px;
+width: 40px;
+position: absolute;
+transition: 0.5s;
+}
+.font-face{
+background-color: #3c6dc7;
+}
+.font-wi{
+background-color:#3498DB ;
+}
+.font-insta{
+background-color:rgb(219, 52, 52);
+}
+.font-you{
+background-color:rgb(245, 5, 5);
+}
+.social:hover .font-face{
+top: 0;
+}
+.social:hover .font-wi{
+top: 0;
+}
+.social:hover .font-insta{
+top: 0;
+}
+.social:hover .font-you{
+top: 0;
+}
+
+/* ******** logo ****** */
+    #logo{
+    width: 200px;
+    margin-top: 0.8px;
+    display: inline-block;
+    margin-left: 80px;
+    }
+
+    h3{
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(0, 162, 255);
+    font-style: italic;
+   
+    }
+    /* ********* Navigation ********** */
+    nav{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    text-align: right;
+    width: 1300px;
+    }
+    nav ul{
+    list-style-type: none;
+    }
+    nav li{
+    display: inline-block;
+    margin-right: 15px;
+    
+    
+    }
+    nav a{
+    font-size: 1.1em;
+    color: rgb(78, 77, 77); 
+    text-decoration: none; 
+    }
+    nav a:hover{
+    color: #760001;
+    border-bottom: 1px solid #760001;
+    }
+    
+
+    /* ******** Section ********* */
+.text{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: justify;
+size: 16px;
+color: white;
+background-color: black;
+opacity: 0.5;
+height: 300px;
+width: 500px;
+margin: 0 auto;
+padding: 1% 2% 2% 2% ;
+}
+p{
+font-size: 14px;
+font-weight: normal;
+line-height: 1.5;
+}
+#tunisie{
+height: 600px;
+background: url('image/image13.jpg') no-repeat center ; 
+margin-top: 55px;
+margin-bottom: 25px;
+background-size: 1400px;
+}
+#tabarka{
+height: 600px;
+background: url('image/tbarka11.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: 1400px;
+
+}
+div h2{
+text-decoration: underline;
+padding-bottom: 20px;
+font-size: 30px;
+}
+
+#bizert_dougga{
+height: 600px;
+background: url('image/bizerte1.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+#sousse{
+height: 600px;
+background: url('image/Sousse.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+#touzeur{
+height: 600px;
+background: url('image/Tozeur.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+#douz{
+height: 600px;
+background: url('image/Douz.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+#tataouine{
+height: 600px;
+background: url('image/Tataouine.jpg') no-repeat center; 
+margin-top: 15px;
+margin-bottom: 25px;
+background-size: cover;
+}
+
+
+.boutton_plus{
+color: white;
+font-size: 1.2em;
+font-weight: bold;
+position: absolute;
+border: 3px solid orangered;
+padding: 4px 4px;
+background-color: orangered;
+text-decoration: none;
+right: 400px;
+border-radius: 10px;
+text-align: center;
+}
+
+/* ******** Footer ******** */
+.footer2{
+display: inline-block;
+text-decoration: none;
+color: rgb(128, 113, 113);
+padding: 2px 100px 2px 100px;
+}
+
+#button{
+border: 1px solid gray;
+color: black;
+border-radius: 5px;
+text-align: center;
+font-size: 14px;
+height: 35px;
+width: 100px;
+}
+
+#button :active{
+color: gray
+}
+
+#email{
+border-radius: 5px;
+height: 35px;
+width: 300px;
+}
+
+.copyright{
+text-align: center;
+color: gray;
+font-size: 14px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="bloc_page">
+      <header>
+      <div class="conteneur">
+      <a href="https://www.facebook.com/soufi.safa.3/" class="social"><img src="image/face.png" alt="facebook"> <div class="font-face"></div></a>
+      <a href="https://twitter.com/ChroudiSafa" class="social"><img src="image/twi.png" alt="twitter"><div class="font-wi"></div></a>
+      <a href="https://www.instagram.com/safachroudi/?hl=fr" class="social"><img src="image/instaGris.png" alt="instagram"><div class="font-insta"></div></a>
+      <a href="https://www.youtube.com/" class="social"><img src="image/icons8-de-youtube.png" alt="google plus"> <div class="font-you"></div></a>
+      
+      </div>
+      <nav id="contact">
+        <ul>
+          <li><a href="Decouvrire.html">Accueil</a></li>
+          <li><a href="#">à propos</a></li>
+          <li><a href="contacterNous.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+          <img src="image\tunisia.png" alt="logo de tunisie" id="logo" />
+          <h3>la meuilleur destination !</h3>
+    
+        <nav>
+          <ul>
+            <li><a href="Decouvrire.html">Découvrir</a></li>
+            <li><a href="tunisieTouteL'année.html">La tunisie toute l'année</a></li>
+            <li><a href="MediaCenter.html">Media Center</a></li>
+            <li><a href="Evennement.html">Evénnement </a></li>
+          </ul>
+        </nav>
+    </div>
+      </header>
+      </br>
+      <section>
+        <article>
+          <div id="tunisie">
+          <div class="text">
+            <h2>TUNISIE</h2>
+            <p>
+              Il y a tant de choses à découvrir dans chaque région de la Tunisie
+              : des paysages contrastés, un littoral long de 1250 km parsemé
+              d’îles et d’archipels, des traditions et coutumes diverses, un
+              riche héritage historique. Nous vous présentons ces régions en les
+              répartissant, par commodité, en trois zones : le nord, le centre
+              et le sud.
+            </p></br>
+            <a href="#" class="boutton_plus">En savoir plus</a>
+            </div>
+            
+          </div>
+          <div id="tabarka">
+          <div class="text">
+            <h2>TABARKA</h2>
+            <p>
+              On choisit Tabarka pour son site exceptionnel entre mer et
+              montagne. Ses plages de sable blanc sont encadrées d’éperons
+              rocheux, de bois de pins et de chênes-lièges. La mer cristalline
+              dissimule dans ses profondeurs le précieux corail rouge. La
+              silhouette caractéristique du Fort Génois, perché sur un îlot, est
+              l’emblème de Tabarka. L’arrière-pays montagneux est la promesse de
+              fantastiques excursions et randonnées autour du village d’Aïn
+              Draham, point de départ d’un vaste massif forestier.
+            </p>
+            <a href="#" class="boutton_plus">En savoir plus</a>
+            </div>
+          </div>
+          <div id="bizert_dougga">
+          <div class="text">
+            <h2>BIZERTE & DOUGGA</h2>
+            <p>
+              Amoureux de nature et d’authenticité, les plages et les vallées du
+              nord de la Tunisie vous combleront. Criques sauvages, forêts,
+              vignes et vastes champs de blé… Cette région verdoyante abrite de
+              surcroît deux sites inscrits au patrimoine mondial de l’Unesco.
+              L’un est un site culturel, la cité romaine de Dougga, et l’autre
+              est le parc naturel d’Ichkeul dont le lac attire des milliers
+              d’oiseaux migrateurs. En bord de mer, Bizerte, sentinelle sur la
+              Méditerranée, est une ville d’histoire au charme préservé.
+            </p>
+            <a href="#" class="boutton_plus">En savoir plus</a>
+            </div>
+          </div>
+          <div id="sousse">
+            <div class="text">
+              <h2>SOUSSE </h2>
+              <p>
+                Longues plages, vieilles pierres, hauts palmiers… Sousse est une ville pleine de séductions où loisirs et exotisme se
+                conjuguent harmonieusement. Grande ville moderne, c’est l'une des stations balnéaires les plus animées de Tunisie. Ville
+                d’histoire, elle a conservé une magnifique médina et d’exceptionnels monuments du haut Moyen Age. A quelques minutes,
+                une petite ville touristique au cachet andalou a été construite spécialement pour les vacanciers, autour d’une marina :
+                la station intégrée de Port El Kantaoui.
+              </p>
+              <a href="#" class="boutton_plus">En savoir plus</a>
+            </div>
+          </div>
+          <div id="touzeur">
+            <div class="text">
+              <h2>TOZEUR & NEFTA</h2>
+              <p>
+                Villes surgies du désert et blotties contre d’immenses palmeraies, Tozeur et Nefta surprennent, fascinent et plongent
+                dans le dépaysement. La lumière brûlante du Sahara s’y déverse dans les ruelles des vieux quartiers, entre les hautes
+                façades de briques blondes. A Tozeur, palaces, parcs à thème et musées ont fleuri autour de la vieille ville. A Nefta,
+                d’innombrables coupoles signalent des tombeaux de saints, dominant l’oasis qui se love dans une cuvette appelée la
+                Corbeille. Les dunes du Sahara ne sont qu’à quelques kilomètres …
+              </p>
+              <a href="#" class="boutton_plus">En savoir plus</a>
+            </div>
+          </div>
+<div id="douz">
+  <div class="text">
+    <h2>DOUZ</h2>
+    <p>
+    Couverte d’un fin manteau blanc tel un paysage enneigé, la région de Douz offre la plus douce des approches du désert.
+    Des cordons de dunes et de gracieux bouquets de palmiers longent les routes mangées par le sable. L’immensité blonde du
+    désert est là, à portée de main, tandis que les palmeraies offrent de délicieuses haltes ombragées dans des forêts de
+    palmiers-dattiers. Au cœur de la région, une immense étendue salée aux reflets changeants : le Chott El-Jerid.
+    </p>
+    <a href="#" class="boutton_plus">En savoir plus</a>
+  </div>
+</div>
+<div id="tataouine">
+  <div class="text">
+    <h2>TATAOUINE</h2>
+    <p>
+      Autour de Tataouine et Médenine, le désert apparaît dans toute sa rudesse, implacable. Une vaste plaine caillouteuse
+      débouche sur de grandioses paysages de montagnes et de plateaux désertiques, de falaises et de pitons rocheux. C’est
+      dans ce décor dantesque que surgissent les étonnantes architectures des Ksour, greniers collectifs fortifiés des nomades
+      sahariens. Tout aussi impressionnants sont les vieux villages berbères accrochés au faîte des montagnes, tels Chenini et
+      Douiret. Une région de paysages hors normes et de traditions originales.
+    </p>
+    <a href="#" class="boutton_plus">En savoir plus</a>
+  </div>
+</div>
+ </article>
+      </section>
+      <hr />
+
+
+      <footer>
+        <div class="footer2">
+          <h3>Newsletter</h3>
+          <h5>Inscriver-vous à notre newsletter</h5>
+          <form>
+            <tr>
+              <td>
+                <input type="email" placeholder="Votre Email ici" id="email" />
+              </td>
+            </tr>
+            </br>
+            <hr style="width: 300px; position: absolute;" /></br> 
+            <tr>
+              <input type="submit" value="S'inscrire" name="inscrivez vous" id="button" />
+            </tr>
+          </form>
+        </div>
+        <div class="footer2">
+        <h3>La tunisie toute l'année</h3>
+        <h5>Automne</h5>
+        <h5>Eté</h5>
+        <h5>Hiver</h5>
+        <h5>Printemps</h5>
+        </div>
+        <div class="footer2">
+        <h3>Info Pratique</h3>
+        <h5>Information générales</h5>
+        <h5>Hébergement</h5>
+        <h5>Météo</h5>
+        <h5>Transport</h5>
+        </div>
+        </br>
+        </br>
+        <p class="copyright">Copyright 2016 Office National du Tourisme Tunisien Communiqués</p>
+      </footer>
+    </div>
+  </body>
+</html>
